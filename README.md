@@ -5,13 +5,13 @@ Verification scripts for the paper
 > Jeff Calder and Nadejda Drenska, *On prediction from expert advice with more than five experts*, 2026.
 > arXiv link: to be added.
 
-The paper proves that for six or more experts, no single rank-ordered adversary strategy is globally optimal for prediction with expert advice, in both the geometric-stopping and finite-horizon settings. The proofs of the main theorems are written out in the paper and do not use the scripts in this repository. They do rely on results from the companion papers on four and five experts, which come with their own verification code.
+The paper proves that for six or more experts, no single rank-ordered adversary strategy is globally optimal for prediction with expert advice, in both the geometric-stopping and finite-horizon settings. The proofs of the main theorems are written out in the paper and do not use the scripts in this repository. They do rely on results from the companion papers on four and five experts, which come with their own verification code. The main results of the paper are also formalized in Lean 4; the formalization is archived separately at https://doi.org/10.5281/zenodo.23136818.
 
 The two scripts here check explicit computations stated in the paper:
 
 | Script | Where it is used in the paper | What it checks | Run time |
 |---|---|---|---|
-| `five_expert_tail.py` | Remark 4.12 | The one-leader tail of the explicit five-expert solution has the coefficient predicted by Theorem 2.1 (exact rational arithmetic) | about 10 s |
+| `five_expert_tail.py` | Remark 4.9 | The one-leader tail of the explicit five-expert solution has the coefficient predicted by Theorem 2.1 (exact rational arithmetic) | about 10 s |
 | `origin_bounds.py` | Appendix A: Lemma A.1(ii), Lemma A.2(iii)–(iv), Remark A.3 | Comparisons between bounds on the value at the origin (interval arithmetic and exact rational arithmetic) | about 30 s |
 
 ## Requirements and usage
